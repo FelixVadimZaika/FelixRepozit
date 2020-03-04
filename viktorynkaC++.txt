@@ -1,0 +1,262 @@
+#include <iostream>
+#include <cmath>
+#include <locale>
+#include <cstdlib>
+#include <ctime> 
+#include <vector>
+#include <windows.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <string>
+using namespace std;
+
+int main() {
+	string name;
+	cout << "What is your name? ";
+	getline(cin, name);
+	cout << "Hello, " << name << ", Plys Start Test" << endl;
+	cout << endl;
+
+	HANDLE color = GetStdHandle(STD_OUTPUT_HANDLE);
+
+	int Testy = 0;
+	float baly = 0;
+	//1
+	cout << " Skolko okeanov na nashey planete?" << endl;
+	cout << " Otvety:\n";
+	cout << " 3" << endl;
+	cout << " 5" << endl;
+	cout << " 8" << endl;
+	cout << " Select: " << endl;
+	cin >> Testy;
+	switch (Testy)
+	{
+	case 3:
+		SetConsoleTextAttribute(color, FOREGROUND_RED);
+		cout << "=Ne pravilna vidpovid=" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = 0;
+		break;
+	case 5:
+		SetConsoleTextAttribute(color, FOREGROUND_GREEN);
+		cout << "_-=Pravilna vidpovid=-_" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = 1;
+		break;
+	case 8:
+		SetConsoleTextAttribute(color, FOREGROUND_RED);
+		cout << "=Ne pravilna vidpovid=" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = 0;
+		break;
+	}
+	//2
+	cout << "\nSaturn-Eto kakaya po schetu planeta ot Solnca?\n" << endl;
+	cout << " Otvety:\n";
+	cout << " 10" << endl;
+	cout << " 2" << endl;
+	cout << " 6" << endl;
+	cout << " Select: " << endl;
+
+	cin >> Testy;
+
+	switch (Testy)
+	{
+	case 10:
+		SetConsoleTextAttribute(color, FOREGROUND_RED);
+		cout << "=Ne pravilna vidpovid=" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 0;
+		break;
+	case 2:
+		SetConsoleTextAttribute(color, FOREGROUND_RED);
+		cout << "=Ne pravilna vidpovid=" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 0;
+		break;
+	case 6:
+		SetConsoleTextAttribute(color, FOREGROUND_GREEN);
+		cout << "_-=Pravilna vidpovid=-_" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 1;
+		break;
+	}
+	//3
+	cout << "\nSkolko hromoson v genome cheloveka?\n" << endl;
+	cout << " Otvety:\n";
+	cout << " 42" << endl;
+	cout << " 44" << endl;
+	cout << " 46" << endl;
+	cout << " Select: " << endl;
+	cin >> Testy;
+
+	switch (Testy)
+	{
+	case 42:
+		SetConsoleTextAttribute(color, FOREGROUND_RED);
+		cout << "=Ne pravilna vidpovid=" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 0;
+		break;
+	case 44:
+		SetConsoleTextAttribute(color, FOREGROUND_RED);
+		cout << "=Ne pravilna vidpovid=" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 0;
+		break;
+	case 46:
+		SetConsoleTextAttribute(color, FOREGROUND_GREEN);
+		cout << "_-=Pravilna vidpovid=-_" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 1;
+		break;
+	}
+	//4
+	cout << "\nSkolko druzey-gnomov y belosnezhki?\n" << endl;
+	cout << " Otvety:\n";
+	cout << " 20" << endl;
+	cout << " 7" << endl;
+	cout << " 1" << endl;
+	cout << " Select: " << endl;
+	cin >> Testy;
+
+	switch (Testy)
+	{
+	case 20:
+		SetConsoleTextAttribute(color, FOREGROUND_RED);
+		cout << "=Ne pravilna vidpovid=" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 0;
+		break;
+	case 7:
+		SetConsoleTextAttribute(color, FOREGROUND_GREEN);
+		cout << "_-=Pravilna vidpovid=-_" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 1;
+		break;
+	case 1:
+		SetConsoleTextAttribute(color, FOREGROUND_RED);
+		cout << "=Ne pravilna vidpovid=" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 0;
+		break;
+	}
+	//5
+	cout << "\nYakogo chisla v shazi startuvala Game Zona?\n" << endl;
+	cout << " Otvety:\n";
+	cout << " 12" << endl;
+	cout << " 31" << endl;
+	cout << " 18" << endl;
+	cout << " Select: " << endl;
+
+	cin >> Testy;
+
+	switch (Testy)
+	{
+	case 12:
+		SetConsoleTextAttribute(color, FOREGROUND_RED);
+		cout << "=Ne pravilna vidpovid=" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 0;
+		break;
+	case 31:
+		SetConsoleTextAttribute(color, FOREGROUND_RED);
+		cout << "=Ne pravilna vidpovid=" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 0;
+		break;
+	case 18:
+		SetConsoleTextAttribute(color, FOREGROUND_GREEN);
+		cout << "_-=Pravilna vidpovid=-_" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 1;
+		break;
+	}
+	//6
+	cout << "\nKogdato budet ly Windows 11?\n" << endl;
+	cout << " Otvety:\n";
+	cout << " 1. Yes" << endl;
+	cout << " 2. No" << endl;
+	cout << " Select: " << endl;
+
+	cin >> Testy;
+
+	switch (Testy)
+	{
+	case 1:
+		SetConsoleTextAttribute(color, FOREGROUND_RED);
+		cout << "=Ne pravilna vidpovid=" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 0;
+		break;
+	
+	case 2:
+		SetConsoleTextAttribute(color, FOREGROUND_GREEN);
+		cout << "_-=Pravilna vidpovid=-_" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 1;
+		break;
+	}
+	//7
+	cout << "\nYou krasavchik?\n" << endl;
+	cout << " Otvety:\n";
+	cout << " 1. Yes" << endl;
+	cout << " 2. No" << endl;
+	
+	cout << " Select: " << endl;
+
+	cin >> Testy;
+
+	switch (Testy)
+	{
+	case 1:
+		SetConsoleTextAttribute(color, FOREGROUND_RED);
+		cout << "=Ne pravilna vidpovid=" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 0;
+		break;
+	case 2:
+		SetConsoleTextAttribute(color, FOREGROUND_GREEN);
+		cout << "_-=Pravilna vidpovid=-_" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 1;
+		break;
+	}
+	//8
+	cout << "\nKak teba zovut? Ya zabyl prosto\n" << endl;
+	cout << " Otvety:\n";
+	cout << " 1. " << name << endl;
+	cout << " 2. Rapunsel" << endl;
+	cout << " 3. Chiburashka" << endl;
+	cout << " Select: " << endl;
+
+	cin >> Testy;
+
+	switch (Testy)
+	{
+	case 1:
+		SetConsoleTextAttribute(color, FOREGROUND_GREEN);
+		cout << "_-=Pravilna vidpovid=-_" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 1;
+		break;
+	case 2:
+		SetConsoleTextAttribute(color, FOREGROUND_RED);
+		cout << "=Ne pravilna vidpovid=" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 0;
+		break;
+	case 3:
+		SetConsoleTextAttribute(color, FOREGROUND_RED);
+		cout << "=Ne pravilna vidpovid=" << endl;
+		SetConsoleTextAttribute(color, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+		baly = baly + 0;
+		break;
+	}
+
+	cout << "\nPravilnyx vidpovidey = " << baly << "/8 " << endl;
+	cout << "Bad-2\nGod-5\nSuper-8" << endl;
+	cout << endl;
+	system("pause");
+	return 0;
+}
